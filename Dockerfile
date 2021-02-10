@@ -16,8 +16,6 @@ ADD ./bin/run.sh /usr/local/bin/run
 RUN rm -rf /opt/tomcat/webapps/docs /opt/tomcat/webapps/examples /opt/tomcat/webapps/ROOT
 ADD ["AltoroJ 3.1.1/build/libs/altoromutual.war", "/opt/tomcat/webapps/ROOT.war"]
 
-COPY altoromutual.war /usr/local/tomcat/webapps
-
 EXPOSE 8080
 
 CMD ["/usr/local/bin/run"]
